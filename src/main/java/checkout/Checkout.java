@@ -1,11 +1,14 @@
 package checkout;
 
 public class Checkout {
-    public void add(Integer itemCount, Integer bananaPrice) {
 
+    private int runningTotal = 0;
+
+    public void add(Integer count, Integer price) {
+        runningTotal += (count * price);
     }
 
     public int total() {
-        return 0;
+        return runningTotal;
     }
 }
