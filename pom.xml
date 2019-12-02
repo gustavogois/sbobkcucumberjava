@@ -13,6 +13,34 @@
         <cucumber.version>4.2.6</cucumber.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    <repositories>
+        <repository>
+            <id>maven-central</id>
+            <name>maven-central</name>
+            <url>https://nexus.grupocgd.com/repository/Agile_Public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <layout>default</layout>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>maven-central</id>
+            <url>https://nexus.grupocgd.com/repository/Agile_Public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <layout>default</layout>
+        </pluginRepository>
+    </pluginRepositories>
 
     <dependencies>
         <dependency>
