@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
 public class Stepdefs {
 
     int bananaPrice = 0;
-    Checkout checkout;
+    Checkout checkout = new Checkout();
 
     @Given("​the price of a ​{string}​ is {int}c​​")
     public void thePriceOfAIsC​​(String name, int price) {
@@ -18,7 +18,6 @@ public class Stepdefs {
 
     @When("​I checkout {int} ​{string}​​​")
     public void iCheckout​​​(int itemCount, String itemName) {
-        checkout = new Checkout();
         checkout.add(itemCount, bananaPrice);
     }
 
